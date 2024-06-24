@@ -61,11 +61,6 @@
   });
 </script>
 <!-- batas body -->
-<footer>
-  <center>
-    <p class="align-items-end fs-4 fw-bold text-white">Copyright 2023 Kelompok RPL</p>
-  </center>
-</footer>
 </body>
 
 </html>
