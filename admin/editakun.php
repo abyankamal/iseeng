@@ -10,15 +10,15 @@
         <div class="card-body w-100">
           <?php
           $id = $_GET['id'];
-          $query = "SELECT * FROM anggota WHERE id_buku='$id'";
+          $query = "SELECT * FROM user WHERE id='$id'";
           $result = $conn->query($query);
           foreach ($result as $row) :
           ?>
-            <form action="proses/proseseditanggota.php" method="post">
+            <form action="proses/proseseditakun.php" method="post">
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Nama</label>
                 <input type="hidden" name="id" value="<?= $row['id'] ?>" class="form-control" id="exampleFormControlInput1" placeholder="Masukan Nama" readonly>
-                <input type="text" name="nama" value="<?= $row['name'] ?>" class="form-control" id="exampleFormControlInput1" placeholder="Masukan Nama" readonly>
+                <input type="text" name="name" value="<?= $row['name'] ?>" class="form-control" id="exampleFormControlInput1" placeholder="Masukan Nama" readonly>
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Username</label>
@@ -26,7 +26,7 @@
               </div>
               <label for="exampleFormControlInput1" class="form-label">Password</label>
               <div class="input-group mb-3">
-                <input type="password" name="password" class="form-control" id="password" placeholder="Masukan Password" required>
+                <input type="password" name="password" class="form-control" id="password" placeholder="Masukan Password">
                 <div class="input-group-append">
                   <button class="btn btn-outline-secondary" type="button" id="show-password">
                     <i class="fas fa-eye"></i>
@@ -51,11 +51,6 @@
   });
 </script>
 <!-- batas body -->
-<footer>
-  <center>
-    <p class="align-items-end fs-4 fw-bold text-white">Copyright 2023 Kelompok RPL</p>
-  </center>
-</footer>
 </body>
 
 </html>

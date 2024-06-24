@@ -24,4 +24,3 @@ $stmt4 = $conn->prepare($sql1);
 $stmt4->execute();
 
 header('Location: ../layananpeminjamanbuku.php');
-?>

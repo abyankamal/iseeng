@@ -8,13 +8,12 @@ $stmt1 = $conn->prepare("SELECT * FROM user WHERE id='$id'");
 $stmt1->execute();
 $dataakun = $stmt1->fetch(PDO::FETCH_ASSOC);
 
-$namaakun = $dataakun['nama'];
+$namaakun = $dataakun['name'];
 
-$stmt1 = $conn->prepare("DELETE FROM peminjaman WHERE nm_peminjam='$namaakun'");
+$stmt1 = $conn->prepare("DELETE FROM orders WHERE customer_name='$namaakun'");
 $stmt1->execute();
 
 $stmt1 = $conn->prepare("DELETE FROM user WHERE id='$id'");
 $stmt1->execute();
 
-header('Location: ../kelolaanggota.php');
-?>
+header('Location: ../kelolaakun.php');

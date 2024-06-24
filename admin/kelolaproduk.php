@@ -3,7 +3,7 @@
 <?php include("../koneksi.php"); ?>
 <div class="container mx-auto min-vh-100" style="padding-top: 20px;">
   <div class="text-center" style="padding-bottom: 60px;">
-    <h1 class="fs-1 fw-bold text-white">Halaman Kelola Buku</h1>
+    <h1 class="fs-1 fw-bold text-white">Halaman Kelola Produk</h1>
   </div>
   <div class="row">
     <div class="col-md-12">
@@ -34,7 +34,11 @@
                   <td><?= $row['name'] ?></td>
                   <td><?= $row['description'] ?></td>
                   <td><?= $row['price'] ?></td>
-                  <td><?= $row['category'] ?></td>
+                  <?php if ($row['category'] == 'pakaianpria') { ?>
+                    <td>Pakaian Pria</td>
+                  <?php } else { ?>
+                    <td>Pakaian Wanita</td>
+                  <?php } ?>
                   <td>
                     <img src="../assets/baju/<?= $row['foto'] ?>" alt="" srcset="" width="50" height="70">
                   </td>

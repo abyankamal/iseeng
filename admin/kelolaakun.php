@@ -33,8 +33,8 @@
                   <td><?= $row['username'] ?></td>
                   <td><?= $row['level'] ?></td>
                   <td>
-                    <a href="editanggota.php?id=<?= $row['id'] ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
-                    <a href="proses/proseshapusanggota.php?id=<?= $row['id'] ?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a>
+                    <a href="editakun.php?id=<?= $row['id'] ?>" class="btn btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+                    <a href="proses/proseshapusakun.php?id=<?= $row['id'] ?>" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></a>
                   </td>
                 </tr>
               </tbody>
