@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-md-6">
       <div class="col">
-        <p class="text-white fw-bold fs-1 text-break text-center">SELAMAT DATANG DI SISTEM INFORMASI JAHIT</p>
+        <p class="text-white fw-bold fs-1 text-break text-center">SELAMAT DATANG DI HOME INDUSTRI TAYLOR IFA MANDIRI</p>
       </div>
       <div class="col">
         <p class="text-white fw-bold fs-6 text-break" style="text-align: justify;">Silahkan Login Terlebih Dahulu Untuk Bisa Mengakses Sistem Ini</p>

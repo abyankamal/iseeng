@@ -31,7 +31,7 @@ include('../koneksi.php');
     <script src="../assets/datatables.min.js"></script>
     <style>
         body {
-            background-image: url(../assets/images/ganti-buku.jpg);
+            background-image: url(../assets/images/jahit.jpg);
             background-size: cover;
             font-family: 'Poppins';
         }
@@ -42,7 +42,7 @@ include('../koneksi.php');
     <div class="container-fluid bg-white my-auto h-25 rounded-bottom-4" style="height: 160px;">
         <div class="row">
             <div class="col col-md-4 justify-content-start text-center my-auto">
-                <h1 class="fw-bold fs-1 my-2">TOKO BAJU</h1>
+                <h1 class="fw-bold fs-2 my-2">Home Industry Taylor</h1>
             </div>
             <div class="d-flex col text-center mt-3 py-1">
                 <div class="row">
